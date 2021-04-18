@@ -1,0 +1,71 @@
+{% extends "bootstrap/base.html" %}
+{% block title %} {{ TITLE }} {% endblock %}
+{% block styles %} {{ super() }}
+
+<!-- Custom styles -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+{% endblock %}
+
+{% block content %}
+<h1 class="entry-title" style="text-align: center;">{{ TITLE }}</h1>
+<h1 class="entry-title" style="text-align: center;"><img style="font-size: 14px; font-family: -webkit-standard;" src="/static/detect.png" alt="" width="56" height="56" />&nbsp;&nbsp;<img src="/static/object.png" alt="" width="56" height="56" /></h1>
+<p style="text-align: center;">Real-time object detection using Flask and OpenCV</p>
+<p style="text-align: center;">Web-app created by Paolo David</p>
+<p style="text-align: center;"><img src="/static/github.png" alt="" width="26" height="26" />&nbsp;<a href="https://github.com/paolodavid">https://github.com/paolodavid</a></p>
+
+<div id="container" align=center>
+  <img id="videoElement" src="{{ url_for('video_feed') }}" />
+
+  <div>
+    <br>
+  </div>
+
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Options
+    </a>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <form id="control">
+        Camera preview:
+        <a id="cam-preview"><button class="btn btn-info">On/Off</button></a>
+        Flip horizontal:
+        <a id="flip-horizontal"><button class="btn btn-info">On/Off</button></a>
+        Run detection model:
+        <a id="use-model"><button class="btn btn-info">On/Off</button></a>
+        <br />
+        <br />
+        Exposure:
+        <a id="exposure-down"><button class="btn btn-info">-1</button></a>
+        <a id="exposure-up"><button class="btn btn-info">+1</button></a>
+        Contrast:
+        <a id="contrast-down"><button class="btn btn-info">-4</button></a>
+        <a id="contrast-up"><button class="btn btn-info">+4</button></a>
+        <br />
+        <br />
+        <a id="reset-cam"><button class="btn btn-danger">Reset camera</button></a>
+      </form>
+    </div>
+  </div>
+
+  <div>
+    <br>
+  </div>
+
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Imports -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Scripts -->
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script.js') }}"
+></script>
+
+{{ super() }}
+{% endblock %}
