@@ -1,7 +1,15 @@
 # Real-time-Object-Detection-Flask-OpenCV-YoloV3
 
-Web application for real-time object detection using Flask and OpenCV
+Web application for real-time object detection 🔎 using Flask 🌶, OpenCV and YoloV3 weights. It uses the COCO Dataset 🖼.
 
+# Video
+
+# Features
+- Flask==1.1.1
+- Flask-Bootstrap==3.3.7.1
+- Jinja2==2.11.3
+- numpy==1.18.1
+- opencv-python==4.1.2.30
 
 # Note
 Before to start you should put the YoloV3 weights (https://pjreddie.com/darknet/yolo/) inside the /models folder
@@ -13,5 +21,6 @@ Before to start you should put the YoloV3 weights (https://pjreddie.com/darknet/
 - Contrast: Buttons which increase or decrease camera contrast stops by 4.
 - Reset camera: Reset all camera settings based on camera_settings.log file.
 
-# References
+# Credits
+https://bit.ly/3dqqk3a
 https://bit.ly/3sn24mY
