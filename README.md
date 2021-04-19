@@ -1,4 +1,4 @@
-# Real-time-Object-Detection-Flask-OpenCV-YoloV3
+# Real-time Object Detection Flask-OpenCV-YoloV3
 
 Web application for real-time object detection 🔎 using Flask 🌶, OpenCV and YoloV3 weights. It uses the COCO Dataset 🖼.
 
