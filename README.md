@@ -3,6 +3,7 @@
 Web application for real-time object detection 🔎 using Flask 🌶, OpenCV and YoloV3 weights. It uses the COCO Dataset 🖼.
 
 # Video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/M8DDl5OnKQU/0.jpg)](https://www.youtube.com/watch?v=M8DDl5OnKQU).
 
 # Features
 - Flask==1.1.1
